@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 add new messages
+    div 
+        h2 add 
+        form(method = 'POST' action ='/new')
+            input(type="text" name = "author" placeholder = "author's name")
+            input(type="text" name = "message" placeholder = "message text")
+            input(type="submit" value= "send")
